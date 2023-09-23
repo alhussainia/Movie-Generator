@@ -1,7 +1,49 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Generator</title>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Moovie</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><i class="fas fa-home"></i>Home</li>
+                    <li class="menu-list-item"><i class="fas fa-tv"></i> Generate a Movie</li>
+                    <li class="menu-list-item"><i class="fas fa-bookmark"></i> Saved Movies</li>
+                    <li class="menu-list-item">Suggest a Movie</li>
+                </ul>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-moon toggle-icon"></i>
+                <i class="fas fa-sun toggle-icon"></i>
+                <div class="toggle-ball">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar"></div>
+    <div class="container">
+        <div class="content-container"></div>
+
+
+    </div>
+
+    <!---
+    
     <h1>Looking for a movie to watch?</h1>
     <br><br>
     <h2>Audience:</h2>
@@ -16,7 +58,7 @@
     <input type="checkbox" id="audience5" name="audience5" value="NC-17">
     <label for="audience5"> NC-17 (Clearly Adult)</label>
     <h2>Length:</h2>
-    <input type="checkbox" id="length1" name="length1" value="0.5">
+    <input type="range" id="length1" name="length1" value="0.5">
     <label for="length1"> within 30 min</label>
     <input type="checkbox" id="length2" name="length2" value="1.0">
     <label for="length2"> 30 min to 1 hour</label>
@@ -26,7 +68,7 @@
     <label for="length4"> 1.5 hour to 2 hours</label>
     <input type="checkbox" id="length5" name="length5" value="2.0+">
     <label for="length5"> over 2 hours</label>
-<br><br>
+    <br><br>
     <h2>Genre:</h2>
     <input type="checkbox" id="genre1" name="genre1" value="action">
     <label for="genre1"> Action</label>
@@ -48,8 +90,12 @@
     <label for="genre9"> Musical</label>
     <input type="checkbox" id="genre10" name="genre10" value="documentary">
     <label for="genre10"> Documentary</label>
-<br><br>
+    <br><br>
     <h2>Year:</h2>
+    <label for="year"> Select a movie year: (between 1950 and 2023)</label>
+    <input type="slider" id="year" name="year" min="1950" max="2023">
+
+    
     <input type="checkbox" id="year1" name="year1" value="G">
     <label for="year1"> ~1950</label>
     <input type="checkbox" id="year2" name="year2" value="PG">
@@ -68,7 +114,10 @@
     <label for="year8"> 2010s</label>
     <input type="checkbox" id="year9" name="year9" value="R">
     <label for="year9"> 2020s</label>
-    
+    -->
+
     <h2></h2>
     <h3>Generate:</h3>
-</head>
+</body>
+
+</html>
